@@ -1,0 +1,166 @@
+body{
+    background:linear-gradient(to right, #3f5efb,#fc466b)
+}
+.wrapper{
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 10px;
+    width: 500px;
+    height: 250px;
+    background-color: burlywood;
+    border-radius: 15px;
+    border-color: #fc466b;
+}
+.dice1{
+    position: absolute;
+    left: auto;
+    width:150px;
+    height: 150px;
+}
+.dice2{
+    position: absolute;
+    left: 900px;
+    width:150px;
+    height: 150px;
+}
+p{
+    font-size: 40px;
+}
+#p1{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-style: oblique;
+    color: rgb(14, 0, 139);;
+}
+#p2{
+    position: absolute;
+    left: 950px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-style:oblique;
+    color: rgb(14, 0, 139);
+}
+img{
+    width: 100px;
+}
+#btn{
+    background-color: lawngreen;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    border-color: #f27c93;
+    font-size: x-large;
+    width: 100px;
+    height: 40px;
+    margin-left: 700px;
+    margin-top: 30px;
+}
+#reset{
+    background-color: lawngreen;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    border-color: #f27c93;
+    width: 100px;
+    height: 40px;
+    font-size: x-large;
+    margin-left: 700px;
+    margin-top: 135px;
+}
+#player1{
+    width: 200px;
+    height: 80px;
+    font-size: 80px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 40px;
+    background-color: rgb(127, 255, 255);
+    text-align: center;
+    border-radius: 40px;
+    border-color: #fc466b;
+}
+#player2{
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    font-size:80px;
+    margin-top: 40px;
+    left: 900px;
+    background-color: rgb(127, 255, 255);
+    text-align: center;
+    border-radius: 40px;
+    border-color:#fc466b;
+}
+#play1{
+    width: 200px;
+    position: absolute;
+    margin-left: 190px;
+    border-radius: 100px;
+    border-color: black;
+}
+#play2{
+    width: 200px;
+    margin-left: 1100px;
+    position: absolute;
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* if(p1 <= 100)
+    {
+    if(score != 2 && firstRandomNum != secondRandomNum)
+    {
+        document.getElementById("player1").innerHTML = p1;
+        Player2();
+    
+    }
+    else if( score != 2 && firstRandomNum == secondRandomNum)
+    {
+        if(p1)
+        {
+            document.getElementById("player1").innerHTML = p1;
+        }
+        else
+        {
+            document.getElementById("player2").innerHTML = p2;
+        }
+    }
+    else
+    {
+        if(p1)
+        {
+            if(game() == 2)
+            {
+                document.getElementById("player1").innerHTML = 0;
+            }
+        }
+        if(p2)
+        {
+            if(game() == 2)
+            {
+                document.getElementById("player2").innerHTML = 0;
+            }
+        }
+    } */
