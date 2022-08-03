@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q9.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+    background-color: rgb(215, 215, 226);
+    width: 500px;
+    height: auto;
+    margin-top: 150px;
+    margin-left: 500px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+form input[type='text']{
+    height: 22px;
+    width: 300px;
+}
+form input[type='button']{
+    height: 30px;
+    width: 480px;
+    background-color: rgb(218, 68, 220);
+    border-radius: 5px;
+    border-color: rgb(215, 215, 226);
+}
+    </style>
+    <div class="box">
+        <form action="">
+            <label for="" >Subject:</label>
+            <input type="text" name="subject" id="subject"><br><br>
+            <label for="">Marks:</label>
+            <input type="text" name="marks" id="marks"><br><br>
+            <input type="button" value="Result" onclick="PF()"><br>
+            <a><span id="msg"></span> <b><span id="sub"></span></b> subject</a>
+        </form>
+    </div>
+    <script>
+function PF(){
+    var sub = document.getElementById("subject").value;
+    var marks = document.getElementById("marks").value;
+    
+    if( marks < 35 )
+    {
+    document.getElementById("msg").innerHTML = "Sorry.. You have work hard for";
+    document.getElementById("sub").innerHTML = sub;
+    }
+};
+
+    </script>
+</body>
+</html>

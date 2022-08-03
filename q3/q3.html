@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="q3.css">
+</head>
+<body>
+<style>
+            .box{
+    background-color: gainsboro;
+    width: 300px;
+    height: 220px;
+    margin-left: 500px;
+    margin-top: 200px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+form input[type="text"]{
+    width: 250px;
+    height: 30px;
+}
+button{
+    width: 130px;
+    height: 30px;
+    background-color: rgb(54, 224, 116);
+    border-color: gainsboro;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: inset;
+}
+</style>
+    <div class="box">
+        <form action="">
+            <label for="fname" id="fname">Name: </label>
+            <br><br>
+            <input type="text" id="fname" placeholder="Insert a name...">
+            <br><br>
+            <label for="bday" id="birthday">Birthday: </label>
+            <br><br>
+            <input type="text" id="bday" placeholder="Insert birthday...">
+            <br><br>
+            <button onclick="agefun()">click</button>
+        </form>
+    </div>
+<script>
+function agefun(){
+    var dateString = document.getElementById("bday").value;
+    var today = new Date();
+    var birthday = new Date(dateString);
+    var age = today.getFullYear() - birthday.getFullYear();
+    var m = today.getMonth() - birthday.getMonth() ;
+    if( m < 0 || (m === 0 && today.getDate() < birthday.getDate()))
+    {
+        age--;
+    }
+    alert(age+" years old");
+}
+</script>
+</body>
+</html>

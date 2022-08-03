@@ -1,0 +1,25 @@
+.box{
+    margin-top: 100px;
+    margin-left: 500px;
+    background-color: lightgrey;
+    width: 350px;
+    height: 130px;
+    padding-left: 5px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border-color: white;
+}
+form input[type="text"]{
+    width: 190px;
+    height: 40px;
+}
+form input[type="button"]{
+    width: 160px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(22, 255, 177);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 50px;
+    border-color: lightgray;
+}

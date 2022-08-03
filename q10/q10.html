@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q10.css">
+    <title>Document</title>
+</head>
+<body>
+        <style>
+            .box{
+    height: 340px;
+    width: 220px;
+    background-color: rgb(116, 236, 236);
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 5px;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+table.tab {
+    border-style: hidden;
+    height: 320px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 0px;
+    border-collapse: collapse;
+    background-color: aliceblue;
+    
+}
+table.tab input[id='equal']{
+    height: 210px;
+    width: 50px;
+    background-color: coral;
+    border-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 20px;
+}
+table.tab input[type='text']{
+    width: 200px;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    color: white;
+    border-color: rgb(252, 253, 253);
+    border-collapse: collapse;
+}
+#a ,#b , #c ,#d,#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#AC {
+    width: 50px;
+    height: 50px;
+    border-color: rgb(253, 254, 254);
+    border-style: none!important;
+    border-collapse: collapse;
+}
+table , td , tr{
+    border-style: none;
+    border-collapse: collapse;
+}
+#a,#b,#c,#d{
+    background-color: lightgray;
+}
+#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#AC{
+    background-color: white;
+}
+#n{
+    border-bottom-left-radius: 20px;
+}
+        </style>
+    <div class="box">
+        <table class="tab" cellspacing="0" cellpadding="0">
+            <tr>
+                <td colspan="4"><input type="text" name="" id="result"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="+" onclick="dis('+')" id="a"/> </td>
+                <td><input type="button" value="-" onclick="dis('-')" id="b"/> </td>
+                <td><input type="button" value="*" onclick="dis('*')" id="c"/> </td>
+                <td><input type="button" value="/" onclick="dis('/')" id="d"/> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="dis('1')" id="e"></td>
+                <td><input type="button" value="2" onclick="dis('2')" id="f"></td>
+                <td><input type="button" value="3" onclick="dis('3')" id="g"></td>
+                <td rowspan="4"><input type="button" value="=" id="equal" onclick="solve()"></td>
+            </tr>
+                
+            <tr>
+                <td><input type="button" value="4" onclick="dis('4')" id="h"></td>
+                <td><input type="button" value="5" onclick="dis('5')" id="i"></td>
+                <td><input type="button" value="6" onclick="dis('6')" id="j"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="dis('7')" id="k"></td>
+                <td><input type="button" value="8" onclick="dis('8')" id="l"></td>
+                <td><input type="button" value="9" onclick="dis('9')" id="m"></td>
+            </tr> 
+            <tr>
+                <td><input type="button" value="0" onclick="dis('0')" id="n"></td>
+                <td><input type="button" value="." onclick="dis('.')" id="o"></td>
+                <td><input type="button" value="AC" onclick="reset()" id="AC"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+//function that display value
+function dis(val){
+    document.getElementById('result').value += val;
+}
+//function that evaluates the digit and return result 
+function solve(){
+    let x = document.getElementById('result').value;
+    let y = eval(x);
+    document.getElementById('result').value = y;
+}
+//function that reset the display
+function reset(){
+    document.getElementById('result').value = "";
+}
+    </script>
+</body>
+</html>

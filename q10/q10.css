@@ -1,0 +1,57 @@
+.box{
+    height: 340px;
+    width: 220px;
+    background-color: rgb(116, 236, 236);
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 5px;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+table.tab {
+    border-style: hidden;
+    height: 320px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 0px;
+    border-collapse: collapse;
+    background-color: aliceblue;
+    
+}
+table.tab input[id='equal']{
+    height: 210px;
+    width: 50px;
+    background-color: coral;
+    border-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 20px;
+}
+table.tab input[type='text']{
+    width: 200px;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    color: white;
+    border-color: rgb(252, 253, 253);
+    border-collapse: collapse;
+}
+#a ,#b , #c ,#d,#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#AC {
+    width: 50px;
+    height: 50px;
+    border-color: rgb(253, 254, 254);
+    border-style: none!important;
+    border-collapse: collapse;
+}
+table , td , tr{
+    border-style: none;
+    border-collapse: collapse;
+}
+#a,#b,#c,#d{
+    background-color: lightgray;
+}
+#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#AC{
+    background-color: white;
+}
+#n{
+    border-bottom-left-radius: 20px;
+}

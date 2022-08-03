@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .box{
+    background-color: gainsboro;
+    width: 330px;
+    height: 220px;
+    margin-left: 500px;
+    margin-top: 200px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+form input[type="text"]{
+    width: 250px;
+    height: 30px;
+}
+form input[type='button']{
+    width: 130px;
+    height: 30px;
+    background-color: rgb(54, 224, 116);
+    border-color: gainsboro;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: inset;
+}
+</style>
+    <div class="box">
+        <form action="">
+            <label for="fname" id="w">width: </label>
+            <br><br>
+            <input type="text" id="width" >
+            <br><br>
+            <label for="bday" id="h">heigth: </label>
+            <br><br>
+            <input type="text" id="heigth">
+            <br><br>
+            <input type="button" value="Click" id="val" onclick="areafun()">
+            <a>area of the rectangle is <span id="area"></span>cm<sup>2</sup></a>
+            <script>
+                function areafun(){
+                var height = document.getElementById("heigth").value;
+                var width = document.getElementById("width").value;
+     
+                var area = (width * height);
+
+                // console.log(area);
+                document.getElementById("area").innerHTML = area;
+            }
+            </script>
+        </form>
+    </div>
+    
+</body>
+</html>

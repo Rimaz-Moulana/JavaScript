@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q8.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+    background-color: rgb(212, 210, 210);
+    margin-top: 100px;
+    margin-left: 500px;
+    width: 240px;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: large;
+    border-style: double
+}
+form input[type="text"]{
+    height: 30px;
+    width: 160px;
+}
+    </style>
+    <div class="box">
+        <form action="">
+            <label for="amount">insert the amount:</label><br>
+            <input type="text" name="value" id="amount" onmouseout="findval()" >
+            <br>
+            <a >20% of value: <span id="val" ></span></a><br>
+            <a>Total: <span id="total"></span></a>
+            
+        </form>
+    </div>
+    <script>
+    function findval(){
+    let v = Number(document.getElementById("amount").value);
+    let perval = v*0.2;
+    let sum = v + perval;
+    
+    document.getElementById("val").innerHTML = perval;
+    document.getElementById("total").innerHTML= v + "+" + perval + "=" + sum;
+    }
+    </script>
+</body>
+</html>

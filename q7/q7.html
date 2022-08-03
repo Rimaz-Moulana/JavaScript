@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q7.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+    background-color: lightcyan;
+    width: 300px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 500px;
+    border-color: black;
+    border-radius: 10px;
+}
+form input[type='button']{
+    background-color: grey;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-color:  lightcyan;
+    margin-left: 15px;
+    width: 80px;
+    height: 30px;
+}
+    </style>
+    <div class="box">
+        <h2>Available Hotel Packagees</h2>
+        <br>
+        <form action="">
+            <input type="checkbox" name="Wedding Package" id="wed">Wedding Package<br>
+            <input type="checkbox" name="Birthday Package" id="bday">Birthday Package<br>
+            <input type="checkbox" name="Normal Function Package" id="normal">Normal Function Package<br>
+            <input type="checkbox" name="Day out Package" id="dayout">Day out Package<br>
+            <br>
+            <input type="button" value="Submit" id="submit" onclick="disableFun()">
+        </form>
+    </div>
+    
+    <script>hgnruerth
+        function disableFun(){
+    var a = document.getElementById("wed");
+    var b = document.getElementById("bday");
+    var c = document.getElementById("normal");
+    var d = document.getElementById("dayout");
+
+    if(a.checked == true && b.checked == false && c.checked == false && d.checked == false)
+    {
+        b.disabled = true;
+        c.disabled = true;
+        d.disabled = true;
+    }
+    else if(b.checked == true && a.checked == false && c.checked == false && d.checked == false)
+    {
+        a.disabled = true;
+        c.disabled = true;
+        d.disabled = true;
+    }
+    else if(c.checked == true && a.checked == false && b.checked == false && d.checked == false)
+    {
+        a.disabled = true;
+        b.disabled = true;
+        d.disabled = true;
+    }
+    else
+    {
+        a.disabled = true;
+        b.disabled = true;
+        c.disabled = true;
+    }
+}
+    </script>
+</body>
+</html>

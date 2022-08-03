@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+            width: 320px;
+            height: 260px;
+            background-color:rgb(232, 232, 232);
+            margin-top: 130px;
+            margin-left: 600px;
+            border-radius: 5px;
+        }
+        .form{
+            padding-top: 20px;
+            padding-left: 15px;
+        }
+        form input[type="text"]{
+            width: 250px;
+            height: 30px;
+        }
+        form button{
+            width: 130px;
+            height: 40px;
+            background-color: rgb(44, 222, 118);
+            border-radius: 5px;
+            border-color: rgb(232, 232, 232);
+        }
+    </style>
+    <div class="box">
+        <form action="" class="form">
+            <label for="fname" >Name:</label>
+            <br><br>
+            <input type="text" name="fname" id="fname" placeholder="Insert Name...">
+            <br><br>
+            <label for="hometown">Hometown:</label>
+            <br><br>
+            <input type="text" name="hometown" id="htown"  placeholder="Insert Hometown...">
+            <br><br>
+            <button onclick="popalert()" >Click</button>
+        </form>
+    </div>
+    <script>
+        function popalert(){
+            var name = document.getElementById("fname").value;
+            var town = document.getElementById("htown").value;
+            alert(name+"\n"+town);
+        }
+    </script>
+</body>
+</html>

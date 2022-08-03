@@ -1,0 +1,14 @@
+.box{
+    width: 350px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: 500px;
+    background-color: rgba(176, 196, 222, 0.732);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.time{
+    width: 300px;
+    background-color: rgb(47, 255, 85);
+    padding: 10px;
+}

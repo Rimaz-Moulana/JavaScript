@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="q2.css">
+    
+</head>
+<body>
+    <style>
+        .box{
+            width: 350px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 500px;
+            background-color: rgba(176, 196, 222, 0.732);
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .time{
+            width: 300px;
+            background-color: rgb(47, 255, 85);
+            padding: 10px;
+        }
+    </style>
+    <div class="box">
+        <a>Now the time is <span id="time"></span></a>
+        <br><br><br>
+        <div class="time">
+            <a>Remains <span id="retime"></span> hours more...</a>
+        </div>
+    </div>
+    <script>
+    var today = new Date().toLocaleTimeString([],{ hour: '2-digit' , minute: '2-digit'});
+    var remainshour = 24 - new Date().getHours() - 1;
+    
+    document.getElementById("time").textContent = today;
+    document.getElementById("retime").textContent = remainshour;
+    </script>
+</body>
+</html>
